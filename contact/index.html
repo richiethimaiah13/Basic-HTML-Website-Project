@@ -24,15 +24,19 @@
             <p>Please use the below form to get in touch.</p>
             <form action="###" method="post">
                 <fieldset>
-                    <div><label>Enter your Full Name: <input type="text" required></label></div>
-                    <div><label>Enter your email address: <input type="email" required></label></div>
-                    <select>
-                        <option>Type of Enquiry:</option>
-                        <option>Job Oppurtunity</option>
-                        <option>Freelance Project</option>
-                        <option>Collaboration</option>
-                    </select>
-                    <div><textarea>Enter your message:</textarea></div>
+                    <label for="full_name">Enter your Full Name: <input type="text" id="full_name" required></label>
+                    <label for="email">Enter your email address: <input type="email" id="email"></label>
+                    <label for="enquiry">Type of Enquiry:
+                        <select id="enquiry">
+                            <option value="">(Select one)</option>
+                            <option value="1">Job Oppurtunity</option>
+                            <option value="2">Freelance Project</option>
+                            <option value="3">Collaboration</option>
+                        </select>
+                    </label>
+                    <label for="message">
+                        <textarea rows="3" cols="20" placeholder="Enter your message:" id="message"></textarea>
+                    </label>
                     <input type="submit">
                 </fieldset>
             </form>
